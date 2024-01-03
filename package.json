@@ -1,10 +1,13 @@
 {
+  "homepage":"https://nakulattrey2003.github.io/ChatHUB",
   "name": "chathub",
   "version": "1.0.0",
   "description": "chathub website",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "server": "nodemon backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
