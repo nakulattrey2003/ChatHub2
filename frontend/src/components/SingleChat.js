@@ -29,6 +29,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     const [typing, setTyping] = useState(false);
     const [isTyping, setIsTyping] = useState(false);
     
+    // this is lottie animation configuration
     const defaultOptions = {
         loop: true,
         autoplay: true,

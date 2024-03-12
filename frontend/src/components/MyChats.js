@@ -18,7 +18,8 @@ const MyChats = ({ fetchAgain }) => {
 
   const fetchChats = async () => {
     // console.log(user._id);
-    try {
+    try 
+    {
       const config = {
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -27,7 +28,9 @@ const MyChats = ({ fetchAgain }) => {
 
       const { data } = await axios.get("/api/chat", config);
       setChats(data);
-    } catch (error) {
+    } 
+    catch (error) 
+    {
       toast({
         title: "Error Occured!",
         description: "Failed to Load the chats",

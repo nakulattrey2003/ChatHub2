@@ -19,13 +19,16 @@ const ProfileModal = ({ user, children }) => {
 
   return (
     <>
-      {children 
-        ? (
-            <span onClick={onOpen}>{children}</span>
-          ) 
-        : (
-            <IconButton display={{ base: "flex" }}  backgroundColor="#444444" icon={<ViewIcon color="#AEBAC1" />} onClick={onOpen} />
-          )}
+      {children ? (
+        <span onClick={onOpen}>{children}</span>
+      ) : (
+        <IconButton
+          display={{ base: "flex" }}
+          backgroundColor="#444444"
+          icon={<ViewIcon color="#AEBAC1" />}
+          onClick={onOpen}
+        />
+      )}
       <Modal size="lg" onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
         <ModalContent h="500px" backgroundColor="#393939" color="#AEBAC1">
@@ -50,15 +53,12 @@ const ProfileModal = ({ user, children }) => {
               src={user.pic}
               alt={user.name}
             />
-            <Text
-              fontSize={{ base: "28px", md: "30px" }}
-              fontFamily="Poppins"
-            >
+            <Text fontSize={{ base: "28px", md: "30px" }} fontFamily="Poppins">
               Email: {user.email}
             </Text>
           </ModalBody>
           <ModalFooter>
-            <Button colorScheme='green' mr={3} onClick={onClose}>
+            <Button colorScheme="green" mr={3} onClick={onClose}>
               Close
             </Button>
           </ModalFooter>
@@ -100,7 +100,7 @@ export default ProfileModal;
 //                     display={{ base: "flex" }}
 //                     icon={<ViewIcon />}
 //                     onClick={onOpen}
-//                 /> 
+//                 />
 //             )
 //         }
 //         <Modal size="lg" isOpen={isOpen} onClose={onClose} isCentered>
@@ -115,7 +115,7 @@ export default ProfileModal;
 //             {user.name}
 //           </ModalHeader>
 //           <ModalCloseButton />
-//           <ModalBody 
+//           <ModalBody
 //             display="flex"
 //             flexDir='column'
 //             alignItems='center'
