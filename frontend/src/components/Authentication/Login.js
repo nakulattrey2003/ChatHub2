@@ -75,31 +75,6 @@ const Login = () => {
             });
             setLoading(false);
         }
-        // catch (error) 
-        // {
-        //     if (error.response) 
-        //     {
-        //         // The request was made and the server responded with a status code
-        //         // that falls out of the range of 2xx
-        //         toast({
-        //             title: 'Error Occured!',
-        //             description: error.response.data.message,
-        //             status: 'error',
-        //             duration: 5000,
-        //             isClosable: true,
-        //             position: 'bottom'
-        //         });
-        //     } else if (error.request) {
-        //         // The request was made but no response was received
-        //         console.log('No response received from the server');
-        //     } else {
-        //         // Something happened in setting up the request that triggered an Error
-        //         console.log('Error setting up the request:', error.message);
-        //     }
-
-        //     setLoading(false);
-        // }
-
     };
 
   return (
