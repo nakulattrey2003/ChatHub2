@@ -18,7 +18,7 @@ import { IoSend } from "react-icons/io5";
 import { InputGroup, InputRightElement } from "@chakra-ui/react";
 
  
-const ENDPOINT = "";
+const ENDPOINT = "http://localhost:5000";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
