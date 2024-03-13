@@ -352,7 +352,6 @@ ChatHUB
     Client A sends the message, the sendMessage function emits a 'stop typing' event and a 'new message' event to the server. The server broadcasts the 'stop typing' event to all users, stopping the typing 
     indication for Client B, and broadcasts the 'new message' event, triggering the update of the chat window for both clients. Client B's interface displays the new message and possibly notifies the user, 
     ensuring a synchronized and real-time chat experience.
-ChatHUB
 
 
 -> SignUp
