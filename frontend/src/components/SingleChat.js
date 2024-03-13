@@ -18,7 +18,7 @@ import { IoSend } from "react-icons/io5";
 import { InputGroup, InputRightElement } from "@chakra-ui/react";
 
  
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chathub-alpha.vercel.app";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
