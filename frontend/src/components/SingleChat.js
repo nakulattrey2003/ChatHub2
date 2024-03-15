@@ -17,7 +17,7 @@ import { ChatState } from "../Context/ChatProvider";
 import { IoSend } from "react-icons/io5";
 import { InputGroup, InputRightElement } from "@chakra-ui/react";
 
-const ENDPOINT = "https://chathub-wu4y.onrender.com";
+const ENDPOINT = "localhost:5000";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
